@@ -1,0 +1,25 @@
+### ============================================
+### Base URL
+### ============================================
+
+@baseUrl = http://localhost:5000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzYTI1ZWE2NC0zYjM1LTRkYmEtYmI0Yy1mZWYzNzQxYzc2ZDYiLCJ1c2VybmFtZSI6Imxtcl9hZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc3MjE5MjM3OCwiZXhwIjoxNzcyNzk3MTc4fQ.xNTxSNz53uL7Z87gz645dEvL2tf6JyQhYeO5qKGshso
+
+### ============================================
+### 1️⃣ REGISTER USER
+### ============================================
+
+GET {{baseUrl}}/api/blogs
+
+
+### ============================================
+### 2️⃣ LOGIN USER
+### ============================================
+
+PATCH  {{baseUrl}}/api/blogs/dccb2b85-3349-47de-9a57-ce8ec44dea4e/status
+Content-Type: application/json
+
+{
+  "status": "PUBLISHED"
+}
+
